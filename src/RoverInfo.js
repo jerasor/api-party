@@ -12,7 +12,7 @@ class RoverInfo extends Component {
   }
 
   componentWillReceiveProps = (newProps) => {
-    const locationChanged = newProps.location !== this.props.location
+    const locationChanged = newProps.location.pathname !== this.props.location.pathname
     if (locationChanged) {
       this.fetchRoverData(newProps)
     }
