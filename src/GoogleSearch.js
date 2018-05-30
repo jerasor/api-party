@@ -35,7 +35,6 @@ class GoogleSearch extends Component {
     return (
       <div className="GoogleSearch">
         {search.items.map( (i) => {
-          console.log(i)
           return(
             <div key={i.title}>
               {
